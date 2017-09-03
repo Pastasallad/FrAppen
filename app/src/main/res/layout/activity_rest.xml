@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tfk17mhn.frappen.RestActivity">
+
+    <Button
+        android:id="@+id/buttonClear"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/SJ_gran"
+        android:onClick="clearButton"
+        android:text="@string/clear"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewStart3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/dashTime"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineL33"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineL33" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Tidigaste starttid\nDag 3"
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewStart3"
+        app:layout_constraintLeft_toRightOf="@+id/textViewStart3"
+        app:layout_constraintTop_toBottomOf="@+id/viewL2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Starttid\nBorta"
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/viewL3"
+        app:layout_constraintLeft_toRightOf="@+id/textViewAway"
+        app:layout_constraintTop_toBottomOf="@+id/viewL"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Sluttid"
+        android:textAlignment="textEnd"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEndTime"
+        app:layout_constraintRight_toLeftOf="@+id/textViewEndTime"
+        app:layout_constraintTop_toTopOf="@+id/textViewEndTime" />
+
+    <TextView
+        android:id="@+id/textViewEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/dashTime"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/dashTime"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineL33"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineL33" />
+
+    <TextView
+        android:id="@+id/textViewHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/dashTime"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintRight_toLeftOf="@+id/guideline9"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/viewL3"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.45" />
+
+    <TextView
+        android:id="@+id/textViewFp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/dashTime"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHome"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineR68"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineR68" />
+
+    <View
+        android:id="@+id/viewL_min"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/SJ_hostlov"
+        app:layout_constraintBottom_toTopOf="@+id/textViewEnd2"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineL33"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineL33"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStart2" />
+
+    <View
+        android:id="@+id/viewL"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/SJ_gras"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAway"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineL33"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineL33"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEndTime" />
+
+    <View
+        android:id="@+id/viewM"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/SJ_gras"
+        app:layout_constraintBottom_toTopOf="@+id/textViewHome"
+        app:layout_constraintRight_toLeftOf="@+id/guideline9"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEndTime"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline9" />
+
+    <View
+        android:id="@+id/viewR"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/SJ_gras"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFp"
+        app:layout_constraintTop_toTopOf="@+id/viewM"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineR68"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineR68" />
+
+    <View
+        android:id="@+id/viewL2"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/SJ_gras"
+        app:layout_constraintBottom_toTopOf="@+id/textViewStart3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEnd2"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineL33"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineL33"
+        android:layout_marginStart="8dp" />
+
+    <View
+        android:id="@+id/viewL3"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/SJ_granit"
+        app:layout_constraintBottom_toTopOf="@+id/textViewStart2"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineL33"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineL33"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAway" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline7"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37"
+        tools:layout_editor_absoluteY="210dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline9"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="192dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Starttid\nHemma"
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewHome"
+        app:layout_constraintLeft_toRightOf="@+id/textViewHome"
+        app:layout_constraintTop_toBottomOf="@+id/viewM"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline10"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineL33"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineR68"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.81" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Starttid\nDag 2"
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewStart2"
+        app:layout_constraintLeft_toRightOf="@+id/textViewStart2"
+        app:layout_constraintTop_toTopOf="@+id/textViewStart2"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <TextView
+        android:id="@+id/textViewStart2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/dashTime"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHome"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineL33"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineL33"
+        app:layout_constraintHorizontal_bias="0.45" />
+
+    <TextView
+        android:id="@+id/textViewEnd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dashTime"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineL33"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineL33"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStart2" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Sluttid\nDag 2"
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEnd2"
+        app:layout_constraintLeft_toRightOf="@+id/textViewEnd2"
+        app:layout_constraintTop_toTopOf="@+id/textViewEnd2" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8h"
+        android:textSize="14sp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineL33"
+        app:layout_constraintTop_toTopOf="@+id/viewL"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewL"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="11h"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewM"
+        app:layout_constraintTop_toTopOf="@+id/viewM"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline9" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="11h + komp"
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewL2"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineL33"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEnd2"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline4"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67"
+        tools:layout_editor_absoluteY="380dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Fp-dag"
+        app:layout_constraintTop_toTopOf="@+id/viewR"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewR"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineR68" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:text="Starttid\nEfter Fp"
+        android:textAlignment="textStart"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineR68"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineR68"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFp" />
+
+</android.support.constraint.ConstraintLayout>

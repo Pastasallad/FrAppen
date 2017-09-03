@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="holo_light_primaryOrginal">#00c853</color>
+    <color name="holo_light_primary">#1a883d</color>
+    <color name="white">#ffffff</color>
+    <color name="SJ_lov">#00af49</color>
+    <color name="SJ_lov2">#00963f</color>
+    <color name="SJ_gran">#1a883d</color>
+    <color name="SJ_gras">#62db5a</color>
+    <color name="SJ_sno">#f4f4ee</color>
+    <color name="SJ_sno2">#ebebe3</color>
+    <color name="SJ_hostlov">#df5a00</color>
+    <color name="SJ_sten">#252525</color>
+    <color name="SJ_granit">#74786d</color>
+</resources>

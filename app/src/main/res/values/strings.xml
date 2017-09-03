@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FrAppen</string>
+    <string name="menu">FrAppen</string>
+    <string name="sth">Bromsprocent till STH</string>
+    <string name="convert">Bromsprocent till retardationsvärde</string>
+    <string name="rest_calc">Beräkna vilotider</string>
+    <string name="quit">Avsluta</string>
+    <string name="bromsprocent">Bromsprocent</string>
+    <string name="retardation">Retardationsvärde</string>
+    <string name="train_length">Tåglängd</string>
+    <string name="calculate">Beräkna</string>
+    <string name="EP_broms">EP-broms finns</string>
+    <string name="percent">%</string>
+    <string name="meter">m</string>
+    <string name="dashTime">- - : - -</string>
+    <string name="clear">Rensa</string>
+</resources>
